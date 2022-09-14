@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        /* visited는 active hover 보다 무조건 앞 순서에 놔야 활성화 및 실행이됨 */
+        color: green;
+      }
+      a:active {
+        color: blue;
+      }
+      a:hover {
+        /* 마우스 갔다놓으면 변함 */
+        color: hotpink;
+      } /* pseoudo class 순번 조심하기                                          */
+    </style>
+  </head>
+  <body>
+    <a href="http://www.w3schools.com">w3schools</a>
+  </body>
+</html>

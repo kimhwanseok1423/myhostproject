@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p .unit {
+        /* p 한칸 뛰고 공백은 자손을 뜻함 */
+        background-color: aqua;
+      }
+      p.unit {
+        /*  p하고 안뛴 거라 마지막 p가  맞음            */
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <span class="unit">p요소의 자손요소인 span요소에 설정된 class 속성</span>
+    </p>
+    <p class="unit">p요소에 설정된 class 속성</p>
+  </body>
+</html>

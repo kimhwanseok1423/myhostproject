@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body h1{
+        color: red;
+      }
+        
+      h1{
+        color:blue;
+      }
+      h1,h2{
+        color:yellow ;
+      }
+      h1.wrap{  /* 0001+ 0010 */
+        color:orange;
+      }
+      #data{ /* 0100*/
+        color:yellow;
+      }/*0100+0010 =0110 */
+      #data.cnt{
+        color:cyan;
+      }
+      p{
+        color:purple !important; /*뭘해도 색깔이 안변할때 !important 우선순위를 무시하고 적용됨*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class='wrap'>title</h1>
+    <div>
+        
+            <h1>title2</h1>
+        </div>
+        </div>
+        <p id='data' class='cnt'>우선순위는 요소들에 적용할 스타일이 중복될 떄 적용되는 스타일을 계산하는 방법이다.</p>
+
+        <p class='cnt'> 요소들에 스타일을 적용하기 위해서는 선택지를 지정해서 설명할 수 있다.</p>
+  </body>
+</html>
